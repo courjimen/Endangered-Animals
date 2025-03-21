@@ -1,0 +1,28 @@
+{
+  "name": "animales",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "node server/server.js",
+    "start:client": "react-scripts start",
+    "dev": "concurrently \"npm run dev:server\" \"npm run start:client\"",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.2.0",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "vitest": "^3.0.9"
+  }
+}
