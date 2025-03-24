@@ -82,7 +82,7 @@ Moving along to the form you have the calendar pop up feature to capture time/da
 After inserting all the required information you can submit (please note if you want more animals that the three provided you can add more to the starter code provided in the db.sql file):
 
 | Animals | db.sql Code |
-| ------- | ------- |
+| ------ | ------- |
 | ![](./client/src/assets/form.png) | ![](./client/src/assets/db.png)
 
 You should see your sighting attached to the bottom of the table: 
