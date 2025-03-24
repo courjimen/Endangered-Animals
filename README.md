@@ -67,4 +67,8 @@ This will run both folders and open the app. You should see this in your termina
 
     This will start both the server and the client. You should be able to see the app in your browser at `http://localhost:5173/`. The server will be running on `http://localhost:3000/sightings` or /individuals endpoint.
 
+## Demo
+Here's what you can expect to see:
+
+
 And that's it! You're all set to track some amazing animals! 🎉
