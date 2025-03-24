@@ -13,6 +13,7 @@ function App() {
     sighter_email: '',
   });
   const [individuals, setIndividuals] = useState([]);
+  
   //adding filter for only healthy animals
   const [healthyFilter, setHealthyFilter] = useState(false)
 
@@ -81,7 +82,7 @@ function App() {
       </label>
 
       <Sightings sightings={filteredSightings} />
-      
+
       <h2>Add New Sighting</h2>
       <Form
         newSighting={newSighting}
