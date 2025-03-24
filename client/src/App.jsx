@@ -66,11 +66,22 @@ function App() {
   };
 
   const filteredSightings = healthyFilter ? sightings.filter((sighting) => sighting.healthy) : sightings;
-  
+
   return (
     <div>
       <h1>Endangered Species Sightings</h1>
-      <Sightings sightings={sightings} />
+
+      <label>
+        <input
+          type='checkbox'
+          checked={healthyFilter}
+          onChange={handleFilterChange}
+        />
+        Show Healthy Animals Only
+      </label>
+
+      <Sightings sightings={filteredSightings} />
+      
       <h2>Add New Sighting</h2>
       <Form
         newSighting={newSighting}
