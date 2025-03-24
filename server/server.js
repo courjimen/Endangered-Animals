@@ -3,6 +3,7 @@ const app = express();
 import { default as pool } from './db.js';
 const port = 3000;
 
+//3 animal species
 app.get('/animals', async (req, res) => {
     try {
         const result = await pool.query('SELECT * FROM species');
@@ -17,6 +18,17 @@ app.get('/animals', async (req, res) => {
 app.get('/individuals', async (req, res) => {
     try {
         const result = await pool.query('SELECT * FROM individuals');
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+//sightings of individuals
+app.get('/sightings', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM sightings');
         res.json(result.rows);
     } catch (err) {
         console.error(err);
