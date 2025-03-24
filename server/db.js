@@ -2,7 +2,7 @@
 import pg from 'pg';
 const { Pool } = pg;
 
-//need to update with your postgresql credentials
+//need to update with postgresql credentials
 const pool = new Pool({
     user: 'tpl1122_12',
     host: '/tmp',

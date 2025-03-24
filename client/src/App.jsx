@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SightingList from './components/Sightings';
-import SightingForm from './components/Form';
+import Sightings from './components/Sightings';
+import Form from './components/Form';
 
 function App() {
   const [sightings, setSightings] = useState([]);
@@ -13,6 +13,8 @@ function App() {
     sighter_email: '',
   });
   const [individuals, setIndividuals] = useState([]);
+  //adding filter for only healthy animals
+  const [healthyFilter, setHealthyFilter] = useState(false)
 
   useEffect(() => {
     fetchSightings();
@@ -58,12 +60,19 @@ function App() {
     }
   };
 
+  //handle healthy filter
+  const handleFilterChange = (e) => {
+    setHealthyFilter(e.target.checked);
+  };
+
+  const filteredSightings = healthyFilter ? sightings.filter((sighting) => sighting.healthy) : sightings;
+  
   return (
     <div>
       <h1>Endangered Species Sightings</h1>
-      <SightingList sightings={sightings} />
+      <Sightings sightings={sightings} />
       <h2>Add New Sighting</h2>
-      <SightingForm
+      <Form
         newSighting={newSighting}
         individuals={individuals}
         handleInputChange={handleInputChange}

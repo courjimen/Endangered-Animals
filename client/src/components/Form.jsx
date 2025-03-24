@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SightingForm({ newSighting, individuals, handleInputChange, handleSubmit }) {
+function Form({ newSighting, individuals, handleInputChange, handleSubmit }) {
   return (
     <form onSubmit={handleSubmit}>
       <label>Date/Time:</label>
@@ -33,4 +33,4 @@ function SightingForm({ newSighting, individuals, handleInputChange, handleSubmi
   );
 }
 
-export default SightingForm;
+export default Form;
