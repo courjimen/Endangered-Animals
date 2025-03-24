@@ -2,10 +2,11 @@
   "name": "animales",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start:server": "node server/server.js",
-    "start:client": "react-scripts start",
-    "dev": "concurrently \"npm run dev:server\" \"npm run start:client\"",
+    "server": "nodemon server/server.js",
+    "client": "vite",
+    "dev": "concurrently \"cd client && npm run dev\" \"npm run server\"",
     "test": "vitest"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
   "dependencies": {
     "axios": "^1.8.4",
     "express": "^4.21.2",
+    "pg": "^8.14.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1"
