@@ -68,7 +68,22 @@ This will run both folders and open the app. You should see this in your termina
     This will start both the server and the client. You should be able to see the app in your browser at `http://localhost:5173/`. The server will be running on `http://localhost:3000/sightings` or /individuals endpoint.
 
 ## Demo
-Here's what you can expect to see:
+Here's what you can expect to see upon opening (using the starter code provided for your databases):
+![](./client/src/assets/mainpage.png)
 
+You can also filter your animals by checking the healthy only box:
+![](./client/src/assets/healthyfilter.png)
 
-And that's it! You're all set to track some amazing animals! 🎉
+Moving along to the form you have the calendar pop up feature to capture time/date:
+![](./client/src/assets/addSighting.png)
+
+After inserting all the required information you can submit (please note if you want more animals that the three provided you can add more to the starter code provided in the db.sql file):
+
+| Animals | db.sql Code |
+| ------- | ------- |
+| ![](./client/src/assets/form.png) | ![](./client/src/assets/db.png)
+
+You should see your sighting attached to the bottom of the table: 
+![](./client/src/assets/voila.png)
+
+And voila! You're all set 🎉 Thank you for checking out my work.
