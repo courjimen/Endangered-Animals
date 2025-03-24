@@ -39,4 +39,3 @@ VALUES ('2025-01-15 10:00:00', 1, 'Indian National Park', true, '[email address 
        ('2025-03-10 09:15:00', 3, 'Savannah Grasslands', false, '[email address removed]'),
        ('2024-04-05 16:45:00', 2, 'Arctic Circle', true, '[email address removed]'),
        ('2024-05-22 11:00:00', 1, 'Indian National Park', true, '[email address removed]');
-
