@@ -34,8 +34,8 @@ CREATE TABLE sightings (
 );
 
 INSERT INTO sightings (sighting_datetime, animal_nickname, location, healthy, sighter_email)
-VALUES ('2025-01-15 10:00:00', 'Sammy Swim', 'Indian National Park', true, '[email address removed]'),
-       ('2025-02-20 14:30:00', 'Cloud Sky', 'Arctic Circle', true, '[email address removed]'),
-       ('2025-03-10 09:15:00', 'James Jump', 'Savannah Grasslands', false, '[email address removed]'),
-       ('2024-04-05 16:45:00', 'Cloud Sky', 'Arctic Circle', true, '[email address removed]'),
-       ('2024-05-22 11:00:00', 'James Jump', 'Indian National Park', true, '[email address removed]');
+VALUES ('2025-01-15 10:00:00', 'Sammy Swim', 'Indian National Park', true, 'insertemail@here.com'),
+       ('2025-02-20 14:30:00', 'Cloud Sky', 'Arctic Circle', true, 'insertemail@here.com'),
+       ('2025-03-10 09:15:00', 'James Jump', 'Savannah Grasslands', false, 'insertemail@here.com'),
+       ('2024-04-05 16:45:00', 'Cloud Sky', 'Arctic Circle', true, 'insertemail@here.com'),
+       ('2024-05-22 11:00:00', 'James Jump', 'Indian National Park', false, 'insertemail@here.com');
