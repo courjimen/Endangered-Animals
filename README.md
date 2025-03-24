@@ -22,50 +22,52 @@ Here's installation instructions to get the app running on your machine:
 
 1.  **Grab the Code**
 
-    First, you'll need to clone the repository. Basically, you're copying the code from GitHub to your computer. Pop this command into your terminal:
+First, you'll need to clone the repository. Basically, you're copying the code from GitHub to your computer. Pop this command into your terminal:
 
-    ```bash
-    git clone https://github.com/courjimen/Endangered-Animals.git
-    ```
+```bash
+git clone https://github.com/courjimen/Endangered-Animals.git
+```
 
 2.  **Get the Server and Client Folders Ready**
 
-   Since I run this both folders concurrently, you will need to install the dependencies in the root of my project (at the same level of the client and server folders) Run this command:
+Since I run this both folders concurrently, you will need to install the dependencies in the root of my project (at the same level of the client and server folders) Run this command:
 
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 
 Once everything is installed you can run:
 
-    ```bash
-    npm run dev
-    ```
+```bash
+npm run dev
+```
 
 This will run both folders and open the app. You should see this in your terminall:
 ![](./client/src/assets/terminal.png)
-    
+
 3. **Set Up the Database - Let's Talk Animals! 🐘**
 
-    * **Create a Database:** You'll need to create a PostgreSQL database. You can use tools like `psql` or pgAdmin. Just give it a name, like "animals".
-    * **Tell the App How to Connect:** Open up `server/db.js` and fill in your database connection details (username, password, etc.).
-    * **Fill the Database with Data:** We've got a handy SQL script in `server/db.sql`. Run this to create the tables and add some initial animal sightings:
+* **Create a Database:** You'll need to create a PostgreSQL database. You can use tools like `psql` or pgAdmin. Just give it a name, like "animals".
 
-        ```bash
-        psql -d animals -f server/db.sql
-        ```
+* **Insert database credentials:** Open up `server/db.js` and fill in your database connection details (username, password, etc.).
 
-        (Remember to replace "animals" with your database name!)
+* **Fill the Database with Data:** We've got a handy SQL script in `server/db.sql`. Run this to create the tables and add some initial animal sightings:
+
+```bash
+psql -d animals -f server/db.sql
+```
+
+(Remember to replace "animals" with your database name!)
 
 5.  **Fire It Up! 🔥**
 
-    Finally, we're ready to run the app! Back in the main project directory, type:
+Finally, we're ready to run the app! Back in the main project directory, type:
 
-    ```bash
-    npm run dev
-    ```
+```bash
+npm run dev
+```
 
-    This will start both the server and the client. You should be able to see the app in your browser at `http://localhost:5173/`. The server will be running on `http://localhost:3000/sightings` or /individuals endpoint.
+This will start both the server and the client. You should be able to see the app in your browser at `http://localhost:5173/`. The server will be running on `http://localhost:3000/sightings` or /individuals endpoint.
 
 ## Demo
 Here's what you can expect to see upon opening (using the starter code provided for your databases):
