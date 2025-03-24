@@ -5,12 +5,13 @@ body {
 
 h1, h2 {
   color: #333;
-  margin-bottom: 20px;
 }
 
 label {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-top: 10px;
+  color: rgb(1, 11, 5)
 }
 
 input, select, button {
@@ -50,4 +51,9 @@ th {
 
 form {
   margin-top: 20px;
+  background-color: #f6f6af;
+  border: 1px solid #0b0b0b;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 20px;
 }

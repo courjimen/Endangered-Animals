@@ -84,7 +84,7 @@ function App() {
 
       <Sightings sightings={filteredSightings} />
 
-      <h2>Add New Sighting</h2>
+      
       <Form
         newSighting={newSighting}
         individuals={individuals}

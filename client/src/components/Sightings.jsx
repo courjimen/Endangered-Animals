@@ -6,10 +6,10 @@ function Sightings({ sightings }) {
       <thead>
         <tr>
           <th>Date/Time</th>
-          <th>Individual</th>
+          <th>Animal Name</th>
           <th>Location</th>
           <th>Healthy</th>
-          <th>Sighter Email</th>
+          <th>Email</th>
         </tr>
       </thead>
       <tbody>
