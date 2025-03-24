@@ -49,11 +49,23 @@ th {
   background-color: #f2f2f2;
 }
 
+.healthy {
+  background-color: #dcf3dc;
+}
+
+.unhealthy {
+  background-color: rgb(242, 229, 229);
+}
 form {
   margin-top: 20px;
-  background-color: #f6f6af;
+  background-color: #fbfbd9;
   border: 1px solid #0b0b0b;
   border-radius: 8px;
   display: inline-block;
   padding: 20px;
+}
+
+label input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
 }

@@ -14,7 +14,7 @@ function Sightings({ sightings }) {
       </thead>
       <tbody>
         {sightings.map((sighting) => (
-          <tr key={sighting.sighting_number}>
+          <tr key={sighting.sighting_number} className={sighting.healthy ? 'healthy' : 'unhealthy'}>
             <td>{sighting.sighting_datetime}</td>
             <td>{sighting.nickname}</td>
             <td>{sighting.location}</td>

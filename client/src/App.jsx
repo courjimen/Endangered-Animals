@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div>
-      <h1>Endangered Species Sightings</h1>
+      <h1>Endangered Animal Sightings 🐾</h1>
 
       <label>
         <input
