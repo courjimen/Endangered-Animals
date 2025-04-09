@@ -2,14 +2,14 @@ import React from 'react';
 
 function Form({ newSighting, individuals, handleInputChange, handleSubmit }) {
   return (
-    <form onSubmit={handleSubmit}>
+    <form role='form' onSubmit={handleSubmit}>
       <h2>Add New Sighting</h2>
       <label>Date/Time:</label>
       <input type="datetime-local" name="sighting_datetime" value={newSighting.sighting_datetime} onChange={handleInputChange} required />
 
       <label>Animal Name:</label>
       <select name="animal_nickname" value={newSighting.animal_nickname} onChange={handleInputChange} required>
-        <option value="">Select Individual</option>
+        <option value="">Select Animal</option>
         {individuals.map((individual) => (
           <option key={individual.individual_animal_id} value={individual.nickname}>
             {individual.nickname}

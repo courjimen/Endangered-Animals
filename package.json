@@ -23,8 +23,9 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "@testing-library/react": "^16.2.0",
+    "@testing-library/react": "^16.3.0",
     "concurrently": "^9.1.2",
+    "jsdom": "^26.0.0",
     "nodemon": "^3.1.9",
     "vitest": "^3.0.9"
   }
